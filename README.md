@@ -21,11 +21,54 @@ Seis modelos de aprendizado supervisionado foram implementados e comparados, abr
 * **Decision Tree**
 * **Random Forest**
 
-Além disso, aplicou-se o método de Permutation Importance para avaliar a relevância global de cada atributo no desempenho dos classificadores, fornecendo uma medida interpretável da contribuição de cada variável clínica e histopatológica para a decisão dos modelos.
+O projeto demonstra como algoritmos de aprendizado de máquina podem auxiliar na prática médica , ampliando a precisão diagnóstica e reduzindo a necessidade de exames invasivos.
 
-Os processos de otimização de hiperparâmetros foram conduzidos com *Optuna* , garantindo reprodutibilidade e busca sistemática pelos parâmetros ideais.
+## Dataset
 
-O projeto evidencia como algoritmos de aprendizado de máquina podem auxiliar na prática médica, aumentando a precisão diagnóstica e reduzindo a necessidade de exames invasivos.
+O conjunto de dados utilizado é o **Dermatology Dataset** ( *ILTER; GÜVENIR, 1998* ), disponível no [UCI Machine Learning Repository](https://doi.org/10.24432/C5FK5P).
+
+Ele contém 366 amostras e 34 atributos (12 clínicos e 22 histopatológicos), distribuídos em 6 classes correspondentes a diferentes doenças dermatológicas:
+
+| Código | Doença                |
+| :-----: | :--------------------- |
+|    1    | Psoríase              |
+|    2    | Dermatite Seborreica   |
+|    3    | Líquen Plano          |
+|    4    | Pitiríase Rósea      |
+|    5    | Dermatite Crônica     |
+|    6    | Pitiríase Rubra Pilar |
+
+## Metodologia
+
+1. **Coleta e Leitura dos Dados** — importação direta do repositório UCI via `ucimlrepo`.
+2. **Pré-processamento** — tratamento de valores ausentes utilizando `KNNImputer`.
+3. **Divisão dos Conjuntos** — partição em 90% treino e 10% teste, com semente fixa para reprodutibilidade.
+4. **Normalização e Redução de Dimensionalidade** — aplicação de `StandardScaler` e `PCA` quando necessário.
+5. **Otimização de Hiperparâmetros** — uso da biblioteca `optuna` com validação cruzada estratificada.
+6. **Avaliação de Desempenho** — aplicação de matriz de confusão e relatório de classificação para cada modelo.
+7. **Interpretação dos Resultados** — análise da importância das variáveis via *Permutation Importance*.
+
+## Requisitos e Execução
+
+O projeto foi desenvolvido em **Python 3.10** e requer as seguintes bibliotecas principais:
+
+```bash
+scikit-learn
+optuna
+pandas
+numpy
+matplotlib
+seaborn
+ucimlrepo
+```
+
+Para instalar as dependências:
+
+```bash
+pip install -r requirements.txt
+```
+
+Para executar o notebook, acesse a pasta [`notebook/`]() deste repositório e baixe o arquivo [`Projeto_Final.ipynb`]().
 
 ## Contribuidores
 
