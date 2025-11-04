@@ -25,7 +25,7 @@ O projeto demonstra como algoritmos de aprendizado de máquina podem auxiliar na
 
 ## Dataset
 
-O conjunto de dados utilizado é o **Dermatology Dataset** ( *ILTER; GÜVENIR, 1998* ), disponível no [UCI Machine Learning Repository](https://doi.org/10.24432/C5FK5P).
+O conjunto de dados utilizado é o **Dermatology Dataset** (*ILTER; GÜVENIR, 1998*), disponível no [UCI Machine Learning Repository](https://doi.org/10.24432/C5FK5P).
 
 Ele contém 366 amostras e 34 atributos (12 clínicos e 22 histopatológicos), distribuídos em 6 classes correspondentes a diferentes doenças dermatológicas:
 
@@ -68,13 +68,13 @@ Para instalar as dependências:
 pip install -r requirements.txt
 ```
 
-Para executar o notebook, acesse a pasta [`notebook/`]() deste repositório e baixe o arquivo [`Projeto_Final.ipynb`]().
+Para executar o notebook, acesse a pasta [`notebook/`]() deste repositório e baixe o arquivo[ `projeto_final.ipynb`]().
 
 ## Contribuidores
 
-* **João Gabriel Lima Marengo**
-* **Lázaro Santana Ribeiro**
-* **Victor Emanuel Ruas Lima**
+* [**João Gabriel Lima Marengo**](https://github.com/joaomarengo)
+* [**Lázaro Santana Ribeiro**](https://github.com/lazaroribeiro)
+* [**Victor Emanuel Ruas Lima**](https://github.com/victormanuli)
 
 ## Professor Responsável
 
