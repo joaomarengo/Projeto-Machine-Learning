@@ -68,7 +68,7 @@ Para instalar as dependências:
 pip install -r requirements.txt
 ```
 
-Para executar o notebook, acesse a pasta [`notebook/`]() deste repositório e baixe o arquivo[ `projeto_final.ipynb`]().
+Para executar o notebook, acesse a pasta `notebook/` deste repositório e baixe o arquivo `projeto_final.ipynb`.
 
 ## Contribuidores
 
